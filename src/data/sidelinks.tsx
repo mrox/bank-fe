@@ -117,7 +117,7 @@ export const sidelinks: SideLink[] = [
   {
     title: 'Quản lý dữ liệu',
     label: '',
-    href: '/extra-components',
+    href: '/data-manager',
     icon: <IconComponents size={18} />,
   },
   // {

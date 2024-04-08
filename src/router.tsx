@@ -65,6 +65,12 @@ const router = createBrowserRouter([
         }),
       },
       {
+        path: 'data-manager',
+        lazy: async () => ({
+          Component: (await import('./pages/datamanager')).default,
+        }),
+      },
+      {
         path: 'tasks',
         lazy: async () => ({
           Component: (await import('./pages/tasks')).default,
