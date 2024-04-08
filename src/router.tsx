@@ -53,6 +53,12 @@ const router = createBrowserRouter([
         }),
       },
       {
+        path: 'queries/new',
+        lazy: async () => ({
+          Component: (await import('./pages/queries/newquery')).default,
+        }),
+      },
+      {
         path: 'queries-history',
         lazy: async () => ({
           Component: (await import('./pages/querieshistory')).default,
