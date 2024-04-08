@@ -17,7 +17,7 @@ export default function QueryManager() {
 
   useEffect(() => {
     axios
-      .get('https://sitea-api.tuyentt.com/v1/erequest/config')
+      .get('https://siteb-api.tuyentt.com/v1/erequest/config')
       .then(function (response: any) {
         setPublicKey(response.data.publicKey)
         setPrivateKey(response.data.privateKey)
@@ -28,7 +28,7 @@ export default function QueryManager() {
   }, [])
   const createNewKey = () => {
     axios
-      .post('https://sitea-api.tuyentt.com/v1/erequest/config')
+      .post('https://siteb-api.tuyentt.com/v1/erequest/config')
       .then(function (response: any) {
         setPublicKey(response.data.publicKey)
         setPrivateKey(response.data.privateKey)
