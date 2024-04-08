@@ -17,7 +17,7 @@ export function ListQuery() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch('https://siteb-api.tuyentt.com/v1/erequest')
+      const response = await fetch('https://sitea-api.tuyentt.com/v1/erequest')
       const data = await response.json()
       setQueries(data)
     }

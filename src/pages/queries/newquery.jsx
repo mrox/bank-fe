@@ -27,7 +27,7 @@ export default function NewQuery() {
       cccd: sha256.hex(data.cccd),
     })
     delete data.cccd
-    fetch('https://siteb-api.tuyentt.com/v1/erequest', {
+    fetch('https://sitea-api.tuyentt.com/v1/erequest', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
